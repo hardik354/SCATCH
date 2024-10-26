@@ -1,0 +1,25 @@
+STEPS WHICH ARE USED TO MAKE THE PROJECT
+
+-->😂 jo hume models banana hai like user product so use related sara data collect karna padega
+So first we build user and product models
+
+ 😊😊😊UserModel😊😊😊 
+fullname - string
+email - string
+password - string
+cart  - array of id
+isadmin - boolean
+order - array 
+contactno - number
+picture - db(database)
+----------------------------------
+
+
+😊😊😊ProductModel😊😊😊 
+name - string
+image
+price - number
+discount
+bgcolor
+panelcolor
+textcolor

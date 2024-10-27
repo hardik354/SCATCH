@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === 'development'){
      let owners =   await ownerModel.find();
      if(owners.length > 0)
      {
-        return res.status(503).send('Owner already exists');
+        return res.status(503).send('permission not required');
      }
      let { fullname, email, password } = req.body;
      let createdOwner =  await ownerModel.create({

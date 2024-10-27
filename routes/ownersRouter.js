@@ -6,7 +6,7 @@ const ownerModel = require("../models/owner-model");
 // creating a owner and i want this will work only for development phase
 if (process.env.NODE_ENV === 'development'){
     router.post('/create', async (req, res) => {
-        // res.send('hey it is working');
+        // if any owner already exists then return 503 status code with error message.
      let owners =   await ownerModel.find();
      if(owners.length > 0)
      {

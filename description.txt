@@ -14,7 +14,6 @@ contactno - number
 picture - db(database)
 ----------------------------------
 
-
 😊😊😊ProductModel😊😊😊 
 name - string
 image
@@ -23,3 +22,17 @@ discount
 bgcolor
 panelcolor
 textcolor
+
+
+----------------------------------
+
+-->😂😂😂Routes😂😂😂 
+signup pr login == /
+shop == /shop
+cart == /users/cart
+panel == /admin
+show all products == /owner/products
+show admin panel to create products == /owner/admin
+
+
+----------------------------------

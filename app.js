@@ -9,6 +9,7 @@ const productsRouter = require("./routes/productsRouter");
 const indexRouter = require("./routes/index");
 const expressSession = require("express-session");
 const flash = require("connect-flash");
+// const imageRoutes = require('./routes/imageRoutes');
 
 
 const db = require("./config/mongoose-connection"); // connect to MongoDB using Mongoose
@@ -38,5 +39,6 @@ app.use("/",indexRouter);
 app.use("/owners", ownersRouter);
 app.use("/users", usersRouter);
 app.use("/products", productsRouter);
+// app.use('/api', imageRoutes);
 
 app.listen(3000);

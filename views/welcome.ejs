@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <style>
+    body {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh;
+    background-image: url(/images/uu.jpg);
+    background-size: cover; /* Ensures the background image covers the entire body */
+    background-position:inherit; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Keeps overflow hidden */
+}
+
+
+      /* Welcome container styles */
+      .welcome-container {
+        text-align: center;
+        background-color:rgb(224, 215, 203) ;/* Slight transparency */
+        padding: 50px;
+        border-radius: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 5px; /* Reduced from 10px to 5px */
+        padding: 10px;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        color: rgb(0, 0, 255);
+        margin-top: 0; /* Set margin-top to 0 to eliminate space above */
+        margin-bottom: 15px; /* Keep this if you want space below */
+      }
+
+      .go-to-shop-btn {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        background-color: #84fab0;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.7s ease; /* Corrected transition */
+        text-decoration: none;
+      }
+
+      .go-to-shop-btn:hover {
+        background-color: wheat;
+        color: red;
+        transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out,
+          font-weight 0.7s ease-in-out; /* Smooth transition for all changes */
+        text-shadow: 1px 1px 2px #333; /* Add subtle shadow to the text */
+        font-weight: bold; /* Corrected to 'bold' */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The container for the welcome message, positioned in the center -->
+    <div class="welcome-container">
+      <h1>Welcome to </h1>
+      <h2>"World Of Bags"</h2>
+      <a href="/shop" class="go-to-shop-btn">Go to Shop</a>
+    </div>
+  </body>
+</html>

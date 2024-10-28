@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>
 
-<body class="font-['helvetica_now_display']">
-    <nav class="w-full fixed top-0 left-0 px-5 py-3">
-        <h3 class="text-xl">Scatch</h3>
+  <body class="font-['helvetica_now_display']">
+    <nav class="w-full flex justify-between px-5 py-3 ">
+      <h3 class="text-2xl font-mono bg-yellow-100 border-1 rounded-md p-1">
+        SCATCH
+      </h3>
+      <% var loggedin = typeof loggedin !== "undefined" ? loggedin : true %>
+    <% if(loggedin) { %>
+      <div class="flex gap-5">
+        <a class="text-text-black-600-600 hover:bg-slate-200 active:bg-slate-400 transition duration-300 p-1 " href="/shop">Shop</a>
+        <a class="text-black-600 hover:bg-slate-200 active:bg-slate-400 transition duration-300 p-1 " href="/cart">Cart</a>
+        <a class="text-black-600 hover:bg-slate-200 active:bg-slate-400 transition duration-300 p-1 " href="">My Account</a>
+        <a class="text-red-600 hover:bg-indigo-5 0 active:bg-indigo-100 transition duration-300 p-1 " href="/users/logout">Logout</a>
+      </div>
+      <% } %>
     </nav>
+  </body>
+</html>

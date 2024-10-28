@@ -29,7 +29,7 @@ module.exports.registerUser =async (req, res) => {
                     // moving token to utils folder and using here by calling generateToken function
                     let token = generateToken(user._id);
                      res.cookie("token",token); // set the token in cookie
-                     res.send("user created successfully");
+                     res.redirect("/welcome");
                   }
             });
         });
